@@ -19,11 +19,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('bodegas', App\Http\Controllers\BodegaController::class);
-Route::resource('grupos', App\Http\Controllers\GrupoController::class);
-Route::resource('codigos', App\Http\Controllers\CodigoController::class);
-Route::resource('unidades', App\Http\Controllers\UnidadeController::class);
-Route::resource('ubicaciones', App\Http\Controllers\UbicacioneController::class);
-Route::resource('productos', App\Http\Controllers\ProductoController::class);
+Route::resource('bodegas', App\Http\Controllers\BodegaController::class)->middleware('auth');
+Route::resource('grupos', App\Http\Controllers\GrupoController::class)->middleware('auth');;
+Route::resource('codigos', App\Http\Controllers\CodigoController::class)->middleware('auth');;
+Route::resource('unidades', App\Http\Controllers\UnidadeController::class)->middleware('auth');;
+Route::resource('ubicaciones', App\Http\Controllers\UbicacioneController::class)->middleware('auth');;
+Route::resource('productos', App\Http\Controllers\ProductoController::class)->middleware('auth');;
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

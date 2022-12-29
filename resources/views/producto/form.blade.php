@@ -3,8 +3,8 @@
         
         <div class="form-group">
             {{ Form::label('Nombre o Codigo Producto') }}
-            {{ Form::select('name_id', $codigos , $producto->name_id, ['class' => 'form-control' . ($errors->has('name_id') ? ' is-invalid' : ''), 'placeholder' => 'Nombre o Codigo']) }}
-            {!! $errors->first('name_id', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::select('name_id', $codigos , $producto->codigo_id, ['class' => 'form-control' . ($errors->has('codigo_id') ? ' is-invalid' : ''), 'placeholder' => 'Nombre o Codigo']) }}
+            {!! $errors->first('codigo_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('Bodega') }}
