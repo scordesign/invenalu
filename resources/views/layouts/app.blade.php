@@ -41,8 +41,11 @@
                             <a class="nav-link" href="{{ route('grupos.index') }}">
                                 {{ __('Grupos') }}
                             </a>
-                            <a class="nav-link" href="{{ route('productos.index') }}">
+                            <a class="nav-link" href="{{ route('codigos.index') }}">
                                 {{ __('Productos') }}
+                            </a>
+                            <a class="nav-link" href="{{ route('inventario.index') }}">
+                                {{ __('Inventario') }}
                             </a>
                     </ul>
 

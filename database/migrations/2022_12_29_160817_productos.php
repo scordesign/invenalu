@@ -18,7 +18,8 @@ class Productos extends Migration
 
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('name');
+            $table->Integer('name_id')->unsigned();
+            $table->foreign('name_id')->references('id')->on('codigos')->onDelete('cascade');
             $table->Integer('bodega_id')->unsigned();
             $table->foreign('bodega_id')->references('id')->on('bodegas')->onDelete('cascade');
             $table->Integer('grupo_id')->unsigned();
