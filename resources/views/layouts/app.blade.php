@@ -37,16 +37,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('bodegas.index') }}">
                                 {{ __('Bodegas') }}
-                            </a>
+                            </a></li>
+                            <li class="nav-item">
                             <a class="nav-link" href="{{ route('grupos.index') }}">
                                 {{ __('Grupos') }}
-                            </a>
+                            </a></li>
+                            <li class="nav-item">
                             <a class="nav-link" href="{{ route('codigos.index') }}">
                                 {{ __('Productos') }}
-                            </a>
+                            </a></li>
+                            <li class="nav-item">
                             <a class="nav-link" href="{{ route('productos.index') }}">
                                 {{ __('Inventario') }}
-                            </a>
+                            </a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
