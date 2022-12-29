@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Producto') }}
+                                {{ __('Inventario') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('productos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Registrar Conteo') }}
                                 </a>
                               </div>
                         </div>
@@ -36,14 +36,14 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name Id</th>
-										<th>Bodega Id</th>
-										<th>Grupo Id</th>
+										<th>Nombre</th>
+										<th>Bodega</th>
+										<th>Grupo</th>
 										<th>Ubicacion</th>
-										<th>Conteo1</th>
-										<th>Conteo2</th>
-										<th>Deferencia12</th>
-										<th>Conteo3</th>
+										<th>Conteo 1</th>
+										<th>Conteo 2</th>
+										<th>Diferencia</th>
+										<th>Conteo 3</th>
 
                                         <th></th>
                                     </tr>
