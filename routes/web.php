@@ -22,7 +22,7 @@ Auth::routes();
 Route::resource('bodegas', App\Http\Controllers\BodegaController::class);
 Route::resource('grupos', App\Http\Controllers\GrupoController::class);
 Route::resource('codigos', App\Http\Controllers\CodigoController::class);
-Route::resource('unidad', App\Http\Controllers\UnidadController::class);
+Route::resource('unidads', App\Http\Controllers\UnidadController::class);
 Route::resource('ubicacione', App\Http\Controllers\UbicacioneController::class);
 Route::resource('productos', App\Http\Controllers\ProductoController::class);
 
