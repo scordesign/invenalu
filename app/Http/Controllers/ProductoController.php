@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
+use App\Models\Bodega;
+use App\Models\Grupo;
+use App\Models\Codigo;
 use Illuminate\Http\Request;
 
 /**
@@ -19,7 +22,8 @@ class ProductoController extends Controller
     public function index()
     {
         $productos = Producto::paginate();
-
+       
+   
         return view('producto.index', compact('productos'))
             ->with('i', (request()->input('page', 1) - 1) * $productos->perPage());
     }
@@ -32,7 +36,12 @@ class ProductoController extends Controller
     public function create()
     {
         $producto = new Producto();
-        return view('producto.create', compact('producto'));
+
+        $bodegas = Bodega::pluck('name', 'id');
+        $grupos = Grupo::pluck('name', 'id');
+        $codigos = Codigo::pluck('name', 'id');
+
+        return view('producto.create', compact('producto', 'bodegas', 'grupos', 'codigos'));    
     }
 
     /**

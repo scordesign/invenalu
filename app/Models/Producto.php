@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class Producto
  *
  * @property $id
- * @property $name
+ * @property $name_id
  * @property $bodega_id
  * @property $grupo_id
  * @property $created_at
@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $conteo3
  *
  * @property Bodega $bodega
+ * @property Codigo $codigo
  * @property Grupo $grupo
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
@@ -28,7 +29,7 @@ class Producto extends Model
 {
     
     static $rules = [
-		'name' => 'required',
+		'name_id' => 'required',
 		'bodega_id' => 'required',
 		'grupo_id' => 'required',
 		'ubicacion' => 'required',
@@ -45,7 +46,7 @@ class Producto extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','bodega_id','grupo_id','ubicacion','conteo1','conteo2','deferencia12','conteo3'];
+    protected $fillable = ['name_id','bodega_id','grupo_id','ubicacion','conteo1','conteo2','deferencia12','conteo3'];
 
 
     /**
@@ -54,6 +55,14 @@ class Producto extends Model
     public function bodega()
     {
         return $this->hasOne('App\Models\Bodega', 'id', 'bodega_id');
+    }
+    
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function codigo()
+    {
+        return $this->hasOne('App\Models\Codigo', 'id', 'name_id');
     }
     
     /**

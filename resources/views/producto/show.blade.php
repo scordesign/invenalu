@@ -21,8 +21,8 @@
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Name:</strong>
-                            {{ $producto->name }}
+                            <strong>Name Id:</strong>
+                            {{ $producto->name_id }}
                         </div>
                         <div class="form-group">
                             <strong>Bodega Id:</strong>

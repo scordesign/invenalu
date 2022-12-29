@@ -36,7 +36,7 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name</th>
+										<th>Name Id</th>
 										<th>Bodega Id</th>
 										<th>Grupo Id</th>
 										<th>Ubicacion</th>
@@ -53,7 +53,7 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $producto->name }}</td>
+											<td>{{ $producto->name_id }}</td>
 											<td>{{ $producto->bodega_id }}</td>
 											<td>{{ $producto->grupo_id }}</td>
 											<td>{{ $producto->ubicacion }}</td>
