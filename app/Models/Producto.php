@@ -46,7 +46,7 @@ class Producto extends Model
      *
      * @var array
      */
-    protected $fillable = ['name_id','bodega_id','grupo_id','ubicacion','conteo1','conteo2','deferencia12','conteo3'];
+    protected $fillable = ['name_id','bodega_id','grupo_id',];
 
 
     /**
