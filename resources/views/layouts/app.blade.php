@@ -56,7 +56,7 @@
                             </a></li>
                             <li class="nav-item">
                             <a class="nav-link" href="{{ route('productos.index') }}">
-                                {{ __('Inventario') }}
+                                {{ __('Registro Conteo de Inventario') }}
                             </a></li>
                     </ul>
 

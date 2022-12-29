@@ -15,7 +15,6 @@
                     @endif
 
                     {{ __('Has Ingresado correctamente! , Comienza a registrar el conteo de tu inventario.') }}
-                   {{ route('productos') }}
                 </div>
             </div>
         </div>
