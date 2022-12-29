@@ -56,7 +56,7 @@
                                             
 											<td>{{ $producto->codigo->codigo }}</td>
 											<td>{{ $producto->bodega->name }}</td>
-											<td>{{ $producto->grupo->name</td>
+											<td>{{ $producto->grupo->name }}</td>
 											<td>{{ $producto->unidad->name }}</td>
 											<td>{{ $producto->ubicacione->name }}</td>
 											<td>{{ $producto->conteo1 }}</td>
