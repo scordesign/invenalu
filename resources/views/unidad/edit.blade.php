@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Update Unidad
+    Actualizar Tipo Unidad
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Unidad</span>
+                        <span class="card-title">Actualizar Tipo Unidad</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('unidads.update', $unidad->id) }}"  role="form" enctype="multipart/form-data">

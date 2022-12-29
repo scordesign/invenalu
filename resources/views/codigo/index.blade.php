@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Codigo
+    Codigos productos
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
 
                              <div class="float-right">
                                 <a href="{{ route('codigos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear nuevo producto') }}
                                 </a>
                               </div>
                         </div>
@@ -36,7 +36,7 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name</th>
+										<th>Nombre</th>
 										<th>Codigo</th>
 
                                         <th></th>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $grupo->name ?? 'Show Grupo' }}
+    {{ $grupo->name ?? 'Mostrar Grupo' }}
 @endsection
 
 @section('content')
@@ -11,17 +11,17 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Grupo</span>
+                            <span class="card-title">Mostrar Grupo</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('grupos.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('grupos.index') }}"> Volver</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Name:</strong>
+                            <strong>Nombre:</strong>
                             {{ $grupo->name }}
                         </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Update Ubicacione
+    Actualizar Ubicaciones
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Ubicacione</span>
+                        <span class="card-title">Actualizar Ubicaciones</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('ubicaciones.update', $ubicacione->id) }}"  role="form" enctype="multipart/form-data">

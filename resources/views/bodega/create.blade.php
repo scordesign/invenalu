@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Bodega
+    Crear Bodega
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Bodega</span>
+                        <span class="card-title">Crear Bodega</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('bodegas.store') }}"  role="form" enctype="multipart/form-data">

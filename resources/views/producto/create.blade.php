@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Producto
+    Registrar Conteo Inventario
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Producto</span>
+                        <span class="card-title"> Registrar Conteo Inventario</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('productos.store') }}"  role="form" enctype="multipart/form-data">
