@@ -32,8 +32,18 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
 
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('bodegas.index') }}">
+                                {{ __('Bodegas') }}
+                            </a>
+                            <a class="nav-link" href="{{ route('grupos.index') }}">
+                                {{ __('Grupos') }}
+                            </a>
+                            <a class="nav-link" href="{{ route('productos.index') }}">
+                                {{ __('Productos') }}
+                            </a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
