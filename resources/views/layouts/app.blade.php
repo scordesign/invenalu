@@ -47,7 +47,7 @@
                                 {{ __('Productos') }}
                             </a></li>
                             <li class="nav-item">
-                            <a class="nav-link" href="{{ route('unidads.index') }}">
+                            <a class="nav-link" href="{{ route('unidades.index') }}">
                                 {{ __('Unidad') }}
                             </a></li>
                             <li class="nav-item">

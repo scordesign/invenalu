@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Unidad extends Migration
+class Unidades extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class Unidad extends Migration
     public function up()
     {
         //
-        Schema::create('unidad', function (Blueprint $table) {
+        Schema::create('unidades', function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id');
                 $table->string('name');
