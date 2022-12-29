@@ -32,11 +32,11 @@ class Producto extends Model
 		'name_id' => 'required',
 		'bodega_id' => 'required',
 		'grupo_id' => 'required',
-		'ubicacion' => 'required',
+		//'ubicacion' => 'required',
 		'conteo1' => 'required',
-		'conteo2' => 'required',
-		'deferencia12' => 'required',
-		'conteo3' => 'required',
+		//'conteo2' => 'required',
+		//'deferencia12' => 'required',
+		//'conteo3' => 'required',
     ];
 
     protected $perPage = 20;
