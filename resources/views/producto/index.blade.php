@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Producto
+    Inventario
 @endsection
 
 @section('content')
@@ -53,9 +53,9 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $producto->name_id }}</td>
-											<td>{{ $producto->bodega_id }}</td>
-											<td>{{ $producto->grupo_id }}</td>
+											<td>{{ $producto->codigo->name }}</td>
+											<td>{{ $producto->bodega->name }}</td>
+											<td>{{ $producto->grupo->name }}</td>
 											<td>{{ $producto->ubicacion }}</td>
 											<td>{{ $producto->conteo1 }}</td>
 											<td>{{ $producto->conteo2 }}</td>
