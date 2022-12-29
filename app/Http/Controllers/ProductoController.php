@@ -90,7 +90,7 @@ class ProductoController extends Controller
         $grupos = Grupo::pluck('name', 'id');
         $codigos = Codigo::pluck('codigo', 'id');
         $ubicaciones = Ubicacione::pluck('name', 'id');
-        $unidad = Unidad::pluck('name', 'id');
+        $unidad = Unidade::pluck('name', 'id');
 
         return view('producto.edit', compact('producto', 'bodegas', 'grupos', 'codigos','ubicaciones','unidad'));    
         
