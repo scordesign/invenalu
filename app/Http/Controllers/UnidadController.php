@@ -20,8 +20,8 @@ class UnidadController extends Controller
     {
         $unidads = Unidad::paginate();
 
-        return view('unidad.index', compact('unidad'))
-            ->with('i', (request()->input('page', 1) - 1) * $unidad->perPage());
+        return view('unidad.index', compact('unidads'))
+            ->with('i', (request()->input('page', 1) - 1) * $unidads->perPage());
     }
 
     /**
@@ -47,7 +47,7 @@ class UnidadController extends Controller
 
         $unidad = Unidad::create($request->all());
 
-        return redirect()->route('unidad.index')
+        return redirect()->route('unidads.index')
             ->with('success', 'Unidad created successfully.');
     }
 
@@ -90,7 +90,7 @@ class UnidadController extends Controller
 
         $unidad->update($request->all());
 
-        return redirect()->route('unidad.index')
+        return redirect()->route('unidads.index')
             ->with('success', 'Unidad updated successfully');
     }
 
@@ -103,7 +103,7 @@ class UnidadController extends Controller
     {
         $unidad = Unidad::find($id)->delete();
 
-        return redirect()->route('unidad.index')
+        return redirect()->route('unidads.index')
             ->with('success', 'Unidad deleted successfully');
     }
 }
