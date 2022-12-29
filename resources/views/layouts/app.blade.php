@@ -55,7 +55,8 @@
                                 {{ __('Ubicaciones') }}
                             </a></li>
                             <li class="nav-item">
-                            <a class="nav-link" style="color:rgb(87, 164, 45); " href="{{ route('productos.index') }}">
+                            <a class="nav-link" style="color:rgb(87, 164, 45);    font-size: larger;
+    font-weight: bold; " href="{{ route('productos.index') }}">
                                 {{ __('Registro Conteo de Inventario') }}
                             </a></li>
                     </ul>
