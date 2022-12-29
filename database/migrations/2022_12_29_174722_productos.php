@@ -29,10 +29,10 @@ class Productos extends Migration
             $table->integer('ubicacion_id')->unsigned();
             $table->foreign('ubicacion_id')->references('id')->on('ubicaciones')->onDelete('cascade');
             $table->timestamps();
-            $table->Integer('conteo1')->nullable;
-            $table->Integer('conteo2')->nullable;
-            $table->Integer('deferencia12')->nullable;
-            $table->Integer('conteo3')->nullable;
+            $table->Integer('conteo1')->nullable();
+            $table->Integer('conteo2')->nullable();
+            $table->Integer('deferencia12')->nullable();
+            $table->Integer('conteo3')->nullable();
         
             
 
