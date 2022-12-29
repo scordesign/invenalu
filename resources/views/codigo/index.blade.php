@@ -37,7 +37,7 @@
                                         <th>No</th>
                                         
 										<th>Name</th>
-										<th>Tipo</th>
+										<th>Codigo</th>
 
                                         <th></th>
                                     </tr>
@@ -48,7 +48,7 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $codigo->name }}</td>
-											<td>{{ $codigo->tipo }}</td>
+											<td>{{ $codigo->codigo }}</td>
 
                                             <td>
                                                 <form action="{{ route('codigos.destroy',$codigo->id) }}" method="POST">

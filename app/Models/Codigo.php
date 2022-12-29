@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property $id
  * @property $name
- * @property $tipo
+ * @property $codigo
  * @property $created_at
  * @property $updated_at
  *
@@ -21,8 +21,7 @@ class Codigo extends Model
 {
     
     static $rules = [
-		'name' => 'required',
-		'tipo' => 'required',
+		'codigo' => 'required',
     ];
 
     protected $perPage = 20;
@@ -32,7 +31,7 @@ class Codigo extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','tipo'];
+    protected $fillable = ['name','codigo'];
 
 
     /**

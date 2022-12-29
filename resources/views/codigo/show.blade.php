@@ -25,8 +25,8 @@
                             {{ $codigo->name }}
                         </div>
                         <div class="form-group">
-                            <strong>Tipo:</strong>
-                            {{ $codigo->tipo }}
+                            <strong>Codigo:</strong>
+                            {{ $codigo->codigo }}
                         </div>
 
                     </div>
