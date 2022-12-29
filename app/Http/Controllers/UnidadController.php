@@ -20,7 +20,7 @@ class UnidadController extends Controller
     {
         $unidads = Unidad::paginate();
 
-        return view('unidad.index', compact('unidads'))
+        return view('unidad.index', compact('unidad'))
             ->with('i', (request()->input('page', 1) - 1) * $unidads->perPage());
     }
 
@@ -47,7 +47,7 @@ class UnidadController extends Controller
 
         $unidad = Unidad::create($request->all());
 
-        return redirect()->route('unidads.index')
+        return redirect()->route('unidad.index')
             ->with('success', 'Unidad created successfully.');
     }
 
