@@ -88,7 +88,7 @@ class ProductoController extends Controller
         $producto = Producto::find($id);
         $bodegas = Bodega::pluck('name', 'id');
         $grupos = Grupo::pluck('name', 'id');
-        $codigos = Codigo::pluck('name', 'id');
+        $codigos = Codigo::pluck('codigo', 'id');
         $ubicaciones = Ubicacione::pluck('name', 'id');
         $unidad = Unidad::pluck('name', 'id');
 
