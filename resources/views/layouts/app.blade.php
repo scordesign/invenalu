@@ -44,7 +44,7 @@
                             <a class="nav-link" href="{{ route('codigos.index') }}">
                                 {{ __('Productos') }}
                             </a>
-                            <a class="nav-link" href="{{ route('inventario.index') }}">
+                            <a class="nav-link" href="{{ route('producto.index') }}">
                                 {{ __('Inventario') }}
                             </a>
                     </ul>
