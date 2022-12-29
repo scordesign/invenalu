@@ -90,7 +90,7 @@ class UnidadController extends Controller
 
         $unidad->update($request->all());
 
-        return redirect()->route('unidads.index')
+        return redirect()->route('unidad.index')
             ->with('success', 'Unidad updated successfully');
     }
 
@@ -103,7 +103,7 @@ class UnidadController extends Controller
     {
         $unidad = Unidad::find($id)->delete();
 
-        return redirect()->route('unidads.index')
+        return redirect()->route('unidad.index')
             ->with('success', 'Unidad deleted successfully');
     }
 }
