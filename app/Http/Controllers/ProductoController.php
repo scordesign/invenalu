@@ -83,7 +83,11 @@ class ProductoController extends Controller
     {
         $producto = Producto::find($id);
 
-        return view('producto.edit', compact('producto'));
+        $bodegas = Bodega::pluck('name', 'id');
+        $grupos = Grupo::pluck('name', 'id');
+        $codigos = Codigo::pluck('name', 'id');
+
+        return view('producto.edit', compact('producto','bodegas','grupos','codigos'));
     }
 
     /**
