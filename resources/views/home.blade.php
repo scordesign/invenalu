@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('Has Ingresado correctamente! , Comienza a registrar el conteo de tu inventario.') }}
+                    <a href="{{ route('productos') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">AQUI!!</a>
                 </div>
             </div>
         </div>
