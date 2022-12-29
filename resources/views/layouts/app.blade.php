@@ -51,7 +51,7 @@
                                 {{ __('Unidad') }}
                             </a></li>
                             <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ubicacione.index') }}">
+                            <a class="nav-link" href="{{ route('ubicaciones.index') }}">
                                 {{ __('Ubicaciones') }}
                             </a></li>
                             <li class="nav-item">
