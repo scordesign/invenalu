@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property Codigo $codigo
  * @property Grupo $grupo
  * @property Ubicacione $ubicacione
- * @property Unidad $unidad
+ * @property Unidade $unidad
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
@@ -36,11 +36,11 @@ class Producto extends Model
 		'bodega_id' => 'required',
 		'grupo_id' => 'required',
 		'unidad_id' => 'required',
-		'ubicacion_id' => 'required',
+		//'ubicacion_id' => 'required',
 		'conteo1' => 'required',
-		'conteo2' => 'required',
-		'deferencia12' => 'required',
-		'conteo3' => 'required',
+	//	'conteo2' => 'required',
+	//	'deferencia12' => 'required',
+	//	'conteo3' => 'required',
     ];
 
     protected $perPage = 20;
@@ -90,7 +90,7 @@ class Producto extends Model
      */
     public function unidad()
     {
-        return $this->hasOne('App\Models\Unidad', 'id', 'unidad_id');
+        return $this->hasOne('App\Models\Unidade', 'id', 'unidad_id');
     }
     
 

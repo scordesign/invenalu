@@ -7,7 +7,7 @@ use App\Models\Bodega;
 use App\Models\Codigo;
 use App\Models\Grupo;
 use App\Models\Ubicacione;
-use App\Models\Unidad;
+use App\Models\Unidade;
 use Illuminate\Http\Request;
 
 /**
@@ -42,7 +42,7 @@ class ProductoController extends Controller
         $grupos = Grupo::pluck('name', 'id');
         $codigos = Codigo::pluck('name', 'id');
         $ubicaciones = Ubicacione::pluck('name', 'id');
-        $unidad = Unidad::pluck('name', 'id');
+        $unidad = Unidade::pluck('name', 'id');
 
         return view('producto.create', compact('producto', 'bodegas', 'grupos', 'codigos','ubicaciones','unidad'));    
         

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Producto
+    CONTEO INVENTARIO
 @endsection
 
 @section('content')
@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Producto') }}
+                                {{ __('Conteo Inventario') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('productos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Registrar Nuevo Conteo') }}
                                 </a>
                               </div>
                         </div>
@@ -36,14 +36,14 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name Id</th>
-										<th>Bodega Id</th>
-										<th>Grupo Id</th>
-										<th>Unidad Id</th>
-										<th>Ubicacion Id</th>
-										<th>Conteo1</th>
-										<th>Conteo2</th>
-										<th>Deferencia12</th>
+										<th>Nombre o Codigo Producto</th>
+										<th>Bodega</th>
+										<th>Grupo</th>
+										<th>Unidad</th>
+										<th>Ubicación</th>
+										<th>Conteo 1</th>
+										<th>Conteo 2</th>
+										<th>Deferencia Conteo 1 & 2</th>
 										<th>Conteo3</th>
 
                                         <th></th>
@@ -54,11 +54,11 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $producto->name_id }}</td>
-											<td>{{ $producto->bodega_id }}</td>
-											<td>{{ $producto->grupo_id }}</td>
-											<td>{{ $producto->unidad_id }}</td>
-											<td>{{ $producto->ubicacion_id }}</td>
+											<td>{{ $producto->codigo->codigo }}</td>
+											<td>{{ $producto->bodega->name }}</td>
+											<td>{{ $producto->grupo->name</td>
+											<td>{{ $producto->unidad->name }}</td>
+											<td>{{ $producto->ubicacione->name }}</td>
 											<td>{{ $producto->conteo1 }}</td>
 											<td>{{ $producto->conteo2 }}</td>
 											<td>{{ $producto->deferencia12 }}</td>
