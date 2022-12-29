@@ -11,45 +11,49 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Conteo</span>
+                            <span class="card-title">Show Producto</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('productos.index') }}"> Volver</a>
+                            <a class="btn btn-primary" href="{{ route('productos.index') }}"> Back</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Nombre:</strong>
+                            <strong>Name Id:</strong>
                             {{ $producto->name_id }}
                         </div>
                         <div class="form-group">
-                            <strong>Bodega:</strong>
+                            <strong>Bodega Id:</strong>
                             {{ $producto->bodega_id }}
                         </div>
                         <div class="form-group">
-                            <strong>Grupo:</strong>
+                            <strong>Grupo Id:</strong>
                             {{ $producto->grupo_id }}
                         </div>
                         <div class="form-group">
-                            <strong>Ubicacion:</strong>
-                            {{ $producto->ubicacion }}
+                            <strong>Unidad Id:</strong>
+                            {{ $producto->unidad_id }}
                         </div>
                         <div class="form-group">
-                            <strong>Conteo 1:</strong>
+                            <strong>Ubicacion Id:</strong>
+                            {{ $producto->ubicacion_id }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Conteo1:</strong>
                             {{ $producto->conteo1 }}
                         </div>
                         <div class="form-group">
-                            <strong>Conteo 2:</strong>
+                            <strong>Conteo2:</strong>
                             {{ $producto->conteo2 }}
                         </div>
                         <div class="form-group">
-                            <strong>Diferencia:</strong>
+                            <strong>Deferencia12:</strong>
                             {{ $producto->deferencia12 }}
                         </div>
                         <div class="form-group">
-                            <strong>Conteo 3:</strong>
+                            <strong>Conteo3:</strong>
                             {{ $producto->conteo3 }}
                         </div>
 

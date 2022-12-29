@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Producto;
 use App\Models\Bodega;
-use App\Models\Grupo;
 use App\Models\Codigo;
+use App\Models\Grupo;
+use App\Models\Ubicacione;
+use App\Models\Unidad;
 use Illuminate\Http\Request;
 
 /**
@@ -22,8 +24,7 @@ class ProductoController extends Controller
     public function index()
     {
         $productos = Producto::paginate();
-       
-   
+
         return view('producto.index', compact('productos'))
             ->with('i', (request()->input('page', 1) - 1) * $productos->perPage());
     }
@@ -40,8 +41,11 @@ class ProductoController extends Controller
         $bodegas = Bodega::pluck('name', 'id');
         $grupos = Grupo::pluck('name', 'id');
         $codigos = Codigo::pluck('name', 'id');
+        $ubicaciones = Ubicacione::pluck('name', 'id');
+        $unidad = Unidad::pluck('name', 'id');
 
-        return view('producto.create', compact('producto', 'bodegas', 'grupos', 'codigos'));    
+        return view('producto.create', compact('producto', 'bodegas', 'grupos', 'codigos','ubicaciones','unidad'));    
+        
     }
 
     /**
@@ -82,12 +86,15 @@ class ProductoController extends Controller
     public function edit($id)
     {
         $producto = Producto::find($id);
-
         $bodegas = Bodega::pluck('name', 'id');
         $grupos = Grupo::pluck('name', 'id');
         $codigos = Codigo::pluck('name', 'id');
+        $ubicaciones = Ubicacione::pluck('name', 'id');
+        $unidad = Unidad::pluck('name', 'id');
 
-        return view('producto.edit', compact('producto','bodegas','grupos','codigos'));
+        return view('producto.edit', compact('producto', 'bodegas', 'grupos', 'codigos','ubicaciones','unidad'));    
+        
+     
     }
 
     /**

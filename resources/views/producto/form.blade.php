@@ -1,48 +1,49 @@
 <div class="box box-info padding-1">
     <div class="box-body">
         
-        
-
         <div class="form-group">
-            {{ Form::label('Producto') }}
-            {{ Form::select('name_id', $codigos , $producto->name_id, ['class' => 'form-control' . ($errors->has('name_id') ? ' is-invalid' : ''), 'placeholder' => 'Nombre']) }}
+            {{ Form::label('name_id') }}
+            {{ Form::text('name_id', $producto->name_id, ['class' => 'form-control' . ($errors->has('name_id') ? ' is-invalid' : ''), 'placeholder' => 'Name Id']) }}
             {!! $errors->first('name_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
-
-
         <div class="form-group">
-            {{ Form::label('Bodegas') }}
-            {{ Form::select('bodega_id', $bodegas , $producto->bodega_id, ['class' => 'form-control' . ($errors->has('bodega_id') ? ' is-invalid' : ''), 'placeholder' => 'Bodega']) }}
+            {{ Form::label('bodega_id') }}
+            {{ Form::text('bodega_id', $producto->bodega_id, ['class' => 'form-control' . ($errors->has('bodega_id') ? ' is-invalid' : ''), 'placeholder' => 'Bodega Id']) }}
             {!! $errors->first('bodega_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Grupos') }}
-            {{ Form::select('grupo_id', $grupos , $producto->grupo_id, ['class' => 'form-control' . ($errors->has('grupo_id') ? ' is-invalid' : ''), 'placeholder' => 'Grupo']) }}
+            {{ Form::label('grupo_id') }}
+            {{ Form::text('grupo_id', $producto->grupo_id, ['class' => 'form-control' . ($errors->has('grupo_id') ? ' is-invalid' : ''), 'placeholder' => 'Grupo Id']) }}
             {!! $errors->first('grupo_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Ubicación') }}
-            {{ Form::text('ubicacion', $producto->ubicacion, ['class' => 'form-control' . ($errors->has('ubicacion') ? ' is-invalid' : ''), 'placeholder' => 'Ubicacion']) }}
-            {!! $errors->first('ubicacion', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::label('unidad_id') }}
+            {{ Form::text('unidad_id', $producto->unidad_id, ['class' => 'form-control' . ($errors->has('unidad_id') ? ' is-invalid' : ''), 'placeholder' => 'Unidad Id']) }}
+            {!! $errors->first('unidad_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Registro Conteo 1') }}
-            {{ Form::text('conteo1', $producto->conteo1, ['class' => 'form-control' . ($errors->has('conteo1') ? ' is-invalid' : ''), 'placeholder' => 'Conteo 1']) }}
+            {{ Form::label('ubicacion_id') }}
+            {{ Form::text('ubicacion_id', $producto->ubicacion_id, ['class' => 'form-control' . ($errors->has('ubicacion_id') ? ' is-invalid' : ''), 'placeholder' => 'Ubicacion Id']) }}
+            {!! $errors->first('ubicacion_id', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('conteo1') }}
+            {{ Form::text('conteo1', $producto->conteo1, ['class' => 'form-control' . ($errors->has('conteo1') ? ' is-invalid' : ''), 'placeholder' => 'Conteo1']) }}
             {!! $errors->first('conteo1', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Registro Conteo 2') }}
-            {{ Form::text('conteo2', $producto->conteo2, ['class' => 'form-control' . ($errors->has('conteo2') ? ' is-invalid' : ''), 'placeholder' => 'Conteo 2']) }}
+            {{ Form::label('conteo2') }}
+            {{ Form::text('conteo2', $producto->conteo2, ['class' => 'form-control' . ($errors->has('conteo2') ? ' is-invalid' : ''), 'placeholder' => 'Conteo2']) }}
             {!! $errors->first('conteo2', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Diferencias Conteo 1 & 2') }}
-            {{ Form::text('deferencia12', $producto->deferencia12, ['class' => 'form-control' . ($errors->has('deferencia12') ? ' is-invalid' : ''), 'placeholder' => 'Diferencia']) }}
+            {{ Form::label('deferencia12') }}
+            {{ Form::text('deferencia12', $producto->deferencia12, ['class' => 'form-control' . ($errors->has('deferencia12') ? ' is-invalid' : ''), 'placeholder' => 'Deferencia12']) }}
             {!! $errors->first('deferencia12', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Conteo 3') }}
-            {{ Form::text('conteo3', $producto->conteo3, ['class' => 'form-control' . ($errors->has('conteo3') ? ' is-invalid' : ''), 'placeholder' => 'Conteo 3']) }}
+            {{ Form::label('conteo3') }}
+            {{ Form::text('conteo3', $producto->conteo3, ['class' => 'form-control' . ($errors->has('conteo3') ? ' is-invalid' : ''), 'placeholder' => 'Conteo3']) }}
             {!! $errors->first('conteo3', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 

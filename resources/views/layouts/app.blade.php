@@ -47,6 +47,14 @@
                                 {{ __('Productos') }}
                             </a></li>
                             <li class="nav-item">
+                            <a class="nav-link" href="{{ route('unidad.index') }}">
+                                {{ __('Unidad') }}
+                            </a></li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ubicacione.index') }}">
+                                {{ __('Ubicaciones') }}
+                            </a></li>
+                            <li class="nav-item">
                             <a class="nav-link" href="{{ route('productos.index') }}">
                                 {{ __('Inventario') }}
                             </a></li>

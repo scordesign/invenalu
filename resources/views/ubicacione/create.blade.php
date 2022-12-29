@@ -1,26 +1,25 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Actualizar productos
+    Create Ubicacione
 @endsection
 
 @section('content')
     <section class="content container-fluid">
-        <div class="">
+        <div class="row">
             <div class="col-md-12">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Actualizar Productos</span>
+                        <span class="card-title">Create Ubicacione</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('codigos.update', $codigo->id) }}"  role="form" enctype="multipart/form-data">
-                            {{ method_field('PATCH') }}
+                        <form method="POST" action="{{ route('ubicaciones.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
 
-                            @include('codigo.form')
+                            @include('ubicacione.form')
 
                         </form>
                     </div>

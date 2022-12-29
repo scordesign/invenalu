@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Producto
+    Unidad
 @endsection
 
 @section('content')
@@ -13,11 +13,11 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Producto') }}
+                                {{ __('Unidad') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('productos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('unidads.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>
@@ -36,38 +36,22 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name Id</th>
-										<th>Bodega Id</th>
-										<th>Grupo Id</th>
-										<th>Unidad Id</th>
-										<th>Ubicacion Id</th>
-										<th>Conteo1</th>
-										<th>Conteo2</th>
-										<th>Deferencia12</th>
-										<th>Conteo3</th>
+										<th>Name</th>
 
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($productos as $producto)
+                                    @foreach ($unidads as $unidad)
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $producto->name_id }}</td>
-											<td>{{ $producto->bodega_id }}</td>
-											<td>{{ $producto->grupo_id }}</td>
-											<td>{{ $producto->unidad_id }}</td>
-											<td>{{ $producto->ubicacion_id }}</td>
-											<td>{{ $producto->conteo1 }}</td>
-											<td>{{ $producto->conteo2 }}</td>
-											<td>{{ $producto->deferencia12 }}</td>
-											<td>{{ $producto->conteo3 }}</td>
+											<td>{{ $unidad->name }}</td>
 
                                             <td>
-                                                <form action="{{ route('productos.destroy',$producto->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('productos.show',$producto->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('productos.edit',$producto->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                <form action="{{ route('unidads.destroy',$unidad->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('unidads.show',$unidad->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('unidads.edit',$unidad->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
@@ -80,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $productos->links() !!}
+                {!! $unidads->links() !!}
             </div>
         </div>
     </div>

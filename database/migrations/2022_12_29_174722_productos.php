@@ -13,7 +13,7 @@ class Productos extends Migration
      */
     public function up()
     {
-        //
+     
         Schema::create('productos', function (Blueprint $table) {
 
             $table->engine = 'InnoDB';
@@ -24,12 +24,15 @@ class Productos extends Migration
             $table->foreign('bodega_id')->references('id')->on('bodegas')->onDelete('cascade');
             $table->Integer('grupo_id')->unsigned();
             $table->foreign('grupo_id')->references('id')->on('grupos')->onDelete('cascade');
+            $table->integer('unidad_id')->unsigned();
+            $table->foreign('unidad_id')->references('id')->on('unidad')->onDelete('cascade');
+            $table->integer('ubicacion_id')->unsigned();
+            $table->foreign('ubicacion_id')->references('id')->on('ubicaciones')->onDelete('cascade');
             $table->timestamps();
-            $table->string('ubicacion');
-            $table->Integer('conteo1');
-            $table->Integer('conteo2');
-            $table->Integer('deferencia12');
-            $table->Integer('conteo3');
+            $table->Integer('conteo1')->nullable;
+            $table->Integer('conteo2')->nullable;
+            $table->Integer('deferencia12')->nullable;
+            $table->Integer('conteo3')->nullable;
         
             
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Codigos extends Migration
+class Ubicaciones extends Migration
 {
     /**
      * Run the migrations.
@@ -14,14 +14,13 @@ class Codigos extends Migration
     public function up()
     {
         //
-        Schema::create('codigos', function (Blueprint $table) {
-        $table->engine = 'InnoDB';
+        Schema::create('ubicaciones', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('codigo');
+            $table->string('name');
             $table->timestamps();
     });
-}
+    }
 
     /**
      * Reverse the migrations.
