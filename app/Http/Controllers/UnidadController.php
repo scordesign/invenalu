@@ -21,7 +21,7 @@ class UnidadController extends Controller
         $unidads = Unidad::paginate();
 
         return view('unidad.index', compact('unidad'))
-            ->with('i', (request()->input('page', 1) - 1) * $unidads->perPage());
+            ->with('i', (request()->input('page', 1) - 1) * $unidad->perPage());
     }
 
     /**
