@@ -27,6 +27,7 @@ class ProductoController extends Controller
 
         return view('producto.index', compact('productos'))
             ->with('i', (request()->input('page', 1) - 1) * $productos->perPage());
+            
     }
 
     /**
@@ -62,6 +63,8 @@ class ProductoController extends Controller
 
         return redirect()->route('productos.index')
             ->with('success', 'Producto created successfully.');
+
+       
     }
 
     /**
